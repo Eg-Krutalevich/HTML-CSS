@@ -1,177 +1,235 @@
-@media (min-width: 200px) {
-    body {
-        color: #c1c1c1;
-        background-color: #ffffff;
-        font: 25px Myriad Pro, sans-serif;
-        margin: 0 auto;
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
     }
-    .header {
-        margin-left: -180px;
-        font-weight: bold;
-        font-size: 10px;
-        height: 94px;
-        width: 500px;
-    }
-    .wrapper {
-        padding-left: 265px;
-        padding-right: 265px;
-        max-width: 1700px;
-        margin: 0 auto;
-    }
-    .navigation {
+    .content {
+        width: 100vw;
+        height: 100vh;
+        background-color: #06be78;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-    }
-    .nav, .newNav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    } 
+    .content .header {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        list-style-type: none;
-        padding-top: -15px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    } 
+    .content .header #time {
+        margin-top: 10px;
+    } 
+    .content .hourglass {
+        width: 300px;
+        height: 50vh;
     }
-    .nav>li {
-        padding-top: 50px;
-        padding-right: -20px;
-        padding-left: 140px;
-        text-align: center;
+    .content .hourglass .border-top, .content .hourglass .border-bottom {
+        width: 100%;
+        height: 8%;
+        background-color: #AA8278;
+        border: 5px solid #000;
+        border-radius: 15px;
     }
-    .nav>li>a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #868686;
+    .content .hourglass .glass {
+        width: 85%;
+        margin: 0 auto;
+        height: 84%;
     }
-    .newNav>li {
-        text-align: center;
-        font: 9px OpenSans, sans-serif;
-        margin-top: -60px;
-        margin-left: 95px;
-        margin-right: 100px;
-    }
-    .circle {
-        margin-top: 25px;
-        margin-left: 15px;
-        width: 50px;
-        height: 49px;
-    }
-    .banner {
-        background-color: #709dca;
-        height: 590px;
-        width: 1735px;
-    }
-    .rect {
-        padding-right: 125px;
-        padding-left: 125px;
-    }
-    .contact {
-        margin: -95px 0 0 150px;
-        position: absolute;
-    }
-    .email {
-        margin: -95px 0 0 120px;
-        position: absolute;
-    }
-    .phone {
-        margin: -95px 0 0 95px;
-        position: absolute;
-    }
-    .computer {
-        margin-top: 70px;
-        padding-left: 500px;
-    }
-    .page {
-        margin-top: 350px;
-        margin-left: -135px;
-    }
-    .ellipse {
-        margin-top: -220px;
-        margin-left: 660px;
-    }
-    h1 {
-        padding-top: 110px;
-        padding-left: -30px;
-        text-align: center;
-        color: #ffff;
-        text-transform: uppercase;
-    }
-    h2::before {
-        text-align: center;
-        margin-left: 100px;
-        text-transform: uppercase;
-    }
-    h2 {
-        font: 14px OpenSans, sans-serif;
-        color: #fff7e8;
-        margin: -600px 0 0 1000px;
-        font-stretch: 150%;
-    }
-    h3 {
-        margin: -45px 0 0 85px;
-        font: 11px OpenSans, sans-serif;
-        color: #394b50;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    h4 {
-        margin-left: 300px;
-        margin-top: -40px;
-        font: 21px OpenSans, sans-serif;
-        text-align: center;
-        color: #394b50;
-    }
-    h5 {
-        margin-top: 20px;
-        margin-left: 85px;
-        font: 9px OpenSans, sans-serif;
-        color: #c1c1c1;
-    }
-    h6 {
-        margin-top: 100px;
-        margin-left: 320px;
-        text-align: center;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #394b50;
-    }
-    p {
-        font: 14px OpenSans, sans-serif;
-        text-align: center;
-        margin-left: 50px;
-        margin-top: -35px;
-        color: #ffff;
+    .content .hourglass .glass .top, .content .hourglass .glass .bottom {
+        height: 50%;
+        border: 4px solid #000;
+        -webkit-box-shadow: inset 0px 0px 20px #cdf1ff;
+        box-shadow: inset 0px 0px 20px #cdf1ff;
+        background-color: #435564;
         position: relative;
+        overflow: hidden;
     }
-    .work {
-        margin-left: -485px;
-        margin-top: 150px;
-        height: 898px;
+    .content .hourglass .glass .top .sand, .content .hourglass .glass .bottom .sand {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #ecdd0d;
+        border-top: 3px solid #E1AA29;
     }
-    .price {
-        margin-top: -375px;
-        width: 1700px;
-        background: #e7edf3;
-        height: 1130px;
+    .content .hourglass .glass .top {
+        border-top: none;
+        border-bottom-left-radius: 50% 100%;
+        border-bottom-right-radius: 50% 100%;
+    }  
+    .content .hourglass .glass .top .sand {
+        bottom: 0;
+        height: 65%;
+    }  
+    .content .hourglass .glass .bottom {
+        border-bottom: none;
+        border-top-left-radius: 50% 100%;
+        border-top-right-radius: 50% 100%;
+    }   
+    .content .hourglass .glass .bottom .sand {
+        bottom: 0;
+        height: 0%;
+        border: none;
+    }  
+    .content .hourglass .glass .bottom .sand-down {
+        position: absolute;
+        width: 10px;
+        height: 0%;
+        top: 0;
+        left: 48%;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: #F4BF1B;
+    }  
+    .content .timer-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    } 
+    .content .timer-block input, .content .timer-block button, .content .timer-block select {
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: white;
+    }  
+    .content .timer-block .top, .content .timer-block .bottom {
+        width: 250px;
+        padding: 5px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }  
+    .content .timer-block input {
+        width: 80px;
+    }  
+    .content .timer-block button:hover {
+        background-color: #f7ad10;
+        cursor: pointer;
+    }    
+    @-webkit-keyframes jet-sand-anim {
+    0% {
+        height: 100%
     }
-    .clients {
-        height: 910px;
-        width: 1675px;
-        background: #ffc155;
+    100% {
+        height: 100%;
     }
-    .basic {
-        height: 440px;
-        margin: 60px 0 0 -10px;
+    }  
+    @keyframes jet-sand-anim {
+    0% {
+        height: 0%;
     }
-    .premium {
-        height: 500px;
-        margin: -300px 0 0 380px;
+    100% {
+        height: 100%;
     }
-    .gold {
-        height: 440px;
-        margin: -120px 0 0 775px;
     }
-    footer {
-        background-color: #709dca;
-        height: 35px;
-        text-align: center;
-        padding-top: 22.5px;
-        font: 12px OpenSans, sans-serif;
-        color: #e2ebf4;
-        margin: 60px 0 0 0;
+    @-webkit-keyframes jet-sand-second-anim {
+    0% {
+        height: 100%;
     }
-}
+    90% {
+        top: 0;
+        height: 100%;
+    }
+    100% {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        bottom: 0;
+        top: 50%;
+    }
+    }   
+    @keyframes jet-sand-second-anim {
+    0% {
+        height: 100%;
+    }
+    90% {
+        top: 0;
+        height: 100%;
+    }
+    100% {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        bottom: 0;
+        top: 50%;
+    }
+    }   
+    @-webkit-keyframes fill-sand {
+    0% {
+        height: 0%;
+        border-top: 3px solid #E1AA29;
+    }
+    80% {
+        height: 50%;
+    }
+    100% {
+        border-top: 3px solid #E1AA29;
+        height: 55%;
+    }
+    }   
+    @keyframes fill-sand {
+    0% {
+        height: 0%;
+        border-top: 3px solid #E1AA29;
+    }
+    80% {
+        height: 50%;
+    }
+    100% {
+        border-top: 3px solid #E1AA29;
+        height: 55%;
+    }
+    }   
+    @-webkit-keyframes leak-sand {
+    0% {
+        height: 65%;
+    }
+    95% {
+        border-top: 3px solid #E1AA29;
+    }
+    100% {
+        height: 0%;
+        border-top: none;
+    }
+    }  
+    @keyframes leak-sand {
+    0% {
+        height: 65%;
+    }
+    95% {
+        border-top: 3px solid #E1AA29;
+    }
+    100% {
+        height: 0%;
+        border-top: none;
+    }
+    }
